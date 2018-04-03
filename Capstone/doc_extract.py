@@ -119,6 +119,7 @@ def main():
             for line in lines:
                 if ch_BW in line:
                     copy = True
+                    mhzs_match.append(count_mhzs)
                     count_mhzs += 1
                     mhzs_match.append("aaaaaaaaaaaaaaaaaa")
                 if copy:
