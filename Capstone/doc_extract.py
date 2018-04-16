@@ -25,6 +25,7 @@ def main():
     connect_the_SS = "Connect the SS"
     note_1 = "Note 1:"
     table = "Table"
+    test_procedure = "Test procedure"
 
     MHz = "MHz"
     index = 0
@@ -37,11 +38,9 @@ def main():
     extracted_channel = []
     extracted_mhz = []
     mhzs_match = []
-    # input_file_name = open('capstone.txt',"r",encoding='UTF8')
-    # output_file_name = open("output.txt", 'w')
 
-    with open('capstone.txt', "r+", encoding='UTF8') as input_file:
-        for index in range(file_len('capstone.txt')):
+    with open('capstone_combine.txt', "r+", encoding='UTF8') as input_file:
+        for index in range(file_len('capstone_combine.txt')):
             lines = input_file.readlines()
             for line in lines:
                 index += 1
@@ -64,15 +63,16 @@ def main():
                                         save_channel = lines[i + 2]
                                         if lines[i + 3].find('H') != -1:
                                             save_channel += lines[i + 3]
-                                    else:
+                                    """else:
                                         save_channel = lines[i + 1]
                                         if lines[i + 2].find('H') != -1:
-                                            save_channel += lines[i + 2]
+                                            save_channel += lines[i + 2]"""
                                 if ch_BW in lines[i]:
                                     check_environment = True
                                     index = save_index
-                                    extracted_channel.append(save_channel)
+                                    extracted_channel.append(count_channel)
                                     count_channel += 1
+                                    extracted_channel.append(save_channel)
                                     break
 
                         if note_1 in lines[index]:
@@ -88,33 +88,63 @@ def main():
                                         save_channel = lines[i + 2]
                                         if lines[i + 3].find('H') != -1:
                                             save_channel += lines[i + 3]
-                                    else:
+                                    """else:
                                         save_channel = lines[i + 1]
                                         if lines[i + 2].find('H') != -1:
-                                            save_channel += lines[i + 2]
+                                            save_channel += lines[i + 2]"""
                                 if ch_BW in lines[i]:
                                     check_environment = True
                                     index = save_index
-                                    extracted_channel.append(save_channel)
+                                    extracted_channel.append(count_channel)
                                     count_channel += 1
+                                    extracted_channel.append(save_channel)
                                     break
+
+                        if test_procedure in lines[index]:
+                            check_finish = True
+                            set_range = range(save_index, index)
+                            for i in set_range:
+                                if test_channel in lines[i]:
+                                    if lines[i].find('TS') != -1:
+                                        save_channel = lines[i + 2]
+                                        if lines[i + 3].find('H') != -1:
+                                            save_channel += lines[i + 3]
+                                    elif lines[i + 1].find('TS') != -1:
+                                        save_channel = lines[i + 2]
+                                        if lines[i + 3].find('H') != -1:
+                                            save_channel += lines[i + 3]
+                                    """else:
+                                        save_channel = lines[i + 1]
+                                        if lines[i + 2].find('H') != -1:
+                                            save_channel += lines[i + 2]"""
+                                if ch_BW in lines[i]:
+                                    check_environment = True
+                                    index = save_index
+                                    extracted_channel.append(count_channel)
+                                    count_channel += 1
+                                    extracted_channel.append(index)
+                                    extracted_channel.append(save_channel)
+                                    break
+
                         if check_finish:
                             index = save_index
                             break
 
                     if check_environment:
                         if lines[index + 1].find('TS') != -1:
+                            extracted_environment.append(count_environment)
                             count_environment += 1
                             extracted_environment.append(lines[index])
                         else:
+                            extracted_environment.append(count_environment)
                             count_environment += 1
                             extracted_environment.append(lines[index + 1])
 
-    with open('capstone.txt', "r+", encoding='UTF8') as input_file:
+    with open('capstone_combine.txt', "r+", encoding='UTF8') as input_file:
         copy = False
         # pattern = 'MHz$'
 
-        for index in range(file_len('capstone.txt')):
+        for index in range(file_len('capstone_combine.txt')):
             lines = input_file.readlines()
             for line in lines:
                 if ch_BW in line:
@@ -143,12 +173,16 @@ def main():
         if mhzs_match[i] == "aaaaaaaaaaaaaaaaaa":
             if i + 2 < n:
                 if mhzs_match[i + 2] != "aaaaaaaaaaaaaaaaaa":
+                    extracted_mhz.append(count_mhzs)
                     count_mhzs += 1
                     save_mhz = ""
                     save_i = i
                     while True:
                         i += 1
-                        if mhzs_match[i + 1] != "aaaaaaaaaaaaaaaaaa":
+                        if i + 1 == n:
+                            save_mhz += mhzs_match[i]
+                            break
+                        elif mhzs_match[i + 1] != "aaaaaaaaaaaaaaaaaa":
                             save_mhz += mhzs_match[i]
                             save_mhz += " "
                         else:
@@ -156,6 +190,7 @@ def main():
                             break
                     extracted_mhz.append(save_mhz)
             else:
+                extracted_mhz.append(count_mhzs)
                 count_mhzs += 1
                 extracted_mhz.append(mhzs_match[i + 1])
 
@@ -165,11 +200,11 @@ def main():
     print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
     print(extracted_mhz)
 
-    n = len(extracted_mhz)
+    """n = len(extracted_mhz)
     for i in range(0, n):
         curs.execute(sql_insert, (extracted_environment[i], extracted_channel[i], extracted_mhz[i]))
     conn.commit()
-    conn.close()
+    conn.close()"""
 
 
 '''def findMHz():
