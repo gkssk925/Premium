@@ -1,0 +1,3 @@
+Unless otherwise stated, the Test Equipment shall be synchronised to the Uplink signal for measurement of TDD transmitter characteristics.
+For CA tests, Cell ID = 0 applies to P-Cell, and Cell ID = 1 is used for S-Cell.
+Parameters given in table 6.1-1 are used throughout this section for CA, unless otherwise stated by the test case.
