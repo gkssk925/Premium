@@ -42,7 +42,7 @@ Capstone Design
 
 
 
-< Hyojin Kim 작성코드 >
+<  작성코드 >
 I worked on whole our_LSTMClassifier code and data cleaning for machine learning.
 
 I also did some works on Capsone_table name 추출까지/doc_extract.py. 
