@@ -35,6 +35,7 @@ python main.py
 ```
 output:
 ![](./figure/LSTM_classifier_example.png)
+
 ### 4. Dataset:
-We use the following dataset for our example:
-R8 Dataset.[link](http://www.cs.umb.edu/~smimarog/textmining/datasets/).
+Our dataset was a document file defining an environment of ICT(information Communication Tech.)testing case.
+Original file cannot be uploaded though. 
