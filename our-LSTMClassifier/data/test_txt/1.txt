@@ -1,0 +1,2 @@
+The UE performance in this section is considered to be operating band independent. Therefore, the required performance in the respective test cases can be verified in one of the operating bands supported by the UE under test. All the test points supported by the bands of the multiband UE (based on channel bandwidth, DL and UL configuration) need to be tested.
+For CA testing, unless otherwise stated, the logical carriers PCC / SCC are mapped on physical frequencies as defined in Table 8.1-1.
