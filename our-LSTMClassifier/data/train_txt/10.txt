@@ -1,0 +1,1 @@
+For inter-band carrier aggregation with uplink assigned to two E-UTRA bands, UE maximum output power shall be measured over all component carriers from different bands. If each band has separate antenna connectors, maximum output power is measured as the sum of maximum output power at each UE antenna connector. The maximum output power is specified in Table 6.2.2A.0-1.

@@ -1,0 +1,1 @@
+The following UE Power Classes defines the maximum output power for any transmission bandwidth within the channel bandwidth. The period of measurement shall be at least one sub frame (1ms).

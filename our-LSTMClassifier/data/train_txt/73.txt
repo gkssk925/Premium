@@ -1,0 +1,3 @@
+Message contents are according to TS 36.508 [7] clauses TBD with following exceptions:
+-	Table A.7.1.1-1 for FDD
+-	Table A.7.1.2-1 for TDD

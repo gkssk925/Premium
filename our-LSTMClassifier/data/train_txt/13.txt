@@ -1,0 +1,1 @@
+The maximum output power for the CA configuration, derived in step 3 shall be within the range prescribed by the CA UE Power Class and tolerance in Table 6.2.2A.1.5-1.

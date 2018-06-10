@@ -1,0 +1,2 @@
+Same test description as in clause 6.2.2B.4 with the following exception:
+-	Instead of Table 6.2.2B.4.1-1à use Table 6.2.2B_1.4.1-1

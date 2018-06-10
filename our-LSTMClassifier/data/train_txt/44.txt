@@ -1,0 +1,2 @@
+Same test requirements as in clause 6.2.3.5 with the following exceptions:
+Instead of Table 6.2.3.5-1  use Table 6.2.3_1.5-1

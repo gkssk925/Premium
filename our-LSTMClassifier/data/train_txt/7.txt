@@ -1,0 +1,2 @@
+Same test description as in clause 6.2.2.4 with the following exceptions:
+-Instead of Table 6.2.2.4.1-1 use Table 6.2.2_1.4-1

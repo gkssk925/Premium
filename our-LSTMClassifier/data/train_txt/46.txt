@@ -1,0 +1,1 @@
+The maximum output power, derived in step 2 shall be within the range prescribed by the nominal maximum output power and tolerance in Table 6.2.3_2.5-1.

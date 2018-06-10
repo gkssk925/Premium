@@ -1,0 +1,1 @@
+Information element additionalSpectrumEmission is set to NS_12. This can be set in the SystemInformationblockType2 as part of the cell broadcast message. This exception indicates that the UE shall meet the additional spurious emission requirement for a specific deployment scenario.

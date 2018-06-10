@@ -1,0 +1,1 @@
+For UE Power Class 3, the allowed Maximum Power Reduction (MPR) for the maximum output power in Table 6.2.2.3-1 due to higher order modulation and transmit bandwidth configuration (resource blocks) is specified in Table 6.2.3.3-1.

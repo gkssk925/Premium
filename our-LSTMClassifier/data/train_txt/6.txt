@@ -1,0 +1,1 @@
+The following defines the maximum output power for any transmission bandwidth within the channel bandwidth for Power Class 1 and Power Class 2 UE. The period of measurement shall be at least one sub frame (1ms).

@@ -1,0 +1,1 @@
+For intra-band contiguous carrier aggregation the maximum output power is specified in Table 6.2.2A.0-2.

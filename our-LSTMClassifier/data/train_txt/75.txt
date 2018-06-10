@@ -1,0 +1,3 @@
+Same initial conditions as in clause 6.2.3.4.1 with following exceptions for HD-FDD:
+-	Instead of Table 6.2.3.4.1-1  use Table 6.2.3E.4.1-1.
+-	Connect SS to the UE antenna connectors as shown in TS 36.508 [7] Annex A Figure A.3 using only main UE Tx/Rx antenna.

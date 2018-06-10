@@ -1,0 +1,4 @@
+Same as in clause 6.2.2A.1.4.1 with the following exceptions:
+-	Instead of Table 5.4.2A.1-1 use Table 5.4.2A.1-2 for CA configurations with two bands or Table 5.4.2A.1-2a for CA configurations with three bands.
+-	Instead of Table 6.2.2A.1.4.1-1 use Table 6.2.2A.2.4.1-1.
+-	Instead of clause 6.2.2A.1.4.3 use clause 6.2.2A.2.4.3.

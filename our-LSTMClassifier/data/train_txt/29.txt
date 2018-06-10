@@ -1,0 +1,1 @@
+The following UE Power Classes define the maximum output power for any transmission bandwidth within the channel bandwidth for non CA configuration and UL-MIMO unless otherwise stated. The period of measurement shall be at least one sub frame (1ms).

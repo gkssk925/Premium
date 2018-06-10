@@ -1,0 +1,1 @@
+For CA testing, unless otherwise stated, the logical carriers PCC / SCCs are mapped to physical frequencies as defined in Table 6.1-2.

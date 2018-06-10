@@ -1,0 +1,1 @@
+For a power class 2 capable UE operating on Band 41, the corresponding requirements for a power class 3 UE apply when an IE P-max as defined in [5] of 23 dBm or lower is indicated in the cell or if the TDD frame configuration is 0 or 6.

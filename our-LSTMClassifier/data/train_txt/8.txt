@@ -1,0 +1,1 @@
+-Message contents are according to TS 36.508 [7] subclause 4.4.3.2 with the following exceptions:
