@@ -325,11 +325,40 @@ def main():
                 count_mhzs += 1
                 extracted_mhz.append(mhzs_match[i + 1])
 
+    for i in range(len(extracted_mhz)):
+        mhz_only = ''
+        mhz_num_only = ''
+        min_mhz_num = 0
+        k = 0
+        if i % 2 == 1:
+            mhz_only = extracted_mhz[i]
+            mhz_num_only = re.findall(r"[-=]?\d*\.\d+|\d+", mhz_only)   # mhz_num_only is type 'list'
+            min_mhz_num = min(mhz_num_only, key=float)
+            max_mhz_num = max(mhz_num_only, key=float)
+            if i % 2 == 1:
+                min_mhz.append(int((i+1)/2))
+                min_mhz.append(min_mhz_num)
+                max_mhz.append(int((i+1)/2))
+                max_mhz.append(max_mhz_num)
+
+    cond_matched_mhz = extracted_channel 
+    
+    for i in range(len(cond_matched_mhz)):
+        if i % 2 == 1:
+            words = cond_matched_mhz[i].split()
+            if any(lowest in s for s in words):
+                cond_matched_mhz[i] = cond_matched_mhz[i].replace('Lowest', min_mhz[i]+'MHz')
+            if any(highest in s for s in words):
+                cond_matched_mhz[i] = cond_matched_mhz[i].replace('Highest', max_mhz[i]+'MHz')
+
+
     print(extracted_environment)
     print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
     print(extracted_channel)
     print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
     print(extracted_mhz)
+    print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+    print(cond_matched_mhz)
     print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
     print(table_name)
 
