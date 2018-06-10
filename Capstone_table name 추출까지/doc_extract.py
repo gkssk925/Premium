@@ -324,7 +324,9 @@ def main():
                 #extracted_mhz.append(count_mhzs)
                 count_mhzs += 1
                 extracted_mhz.append(mhzs_match[i + 1])
-
+#
+## Hyojin Kim
+#
     for i in range(len(extracted_mhz)):
         mhz_only = ''
         mhz_num_only = ''
@@ -351,7 +353,9 @@ def main():
             if any(highest in s for s in words):
                 cond_matched_mhz[i] = cond_matched_mhz[i].replace('Highest', max_mhz[i]+'MHz')
 
-
+#
+##
+#
     print(extracted_environment)
     print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
     print(extracted_channel)
