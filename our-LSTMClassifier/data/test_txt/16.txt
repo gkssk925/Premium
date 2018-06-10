@@ -1,0 +1,1 @@
+The parameters specified in Table 8.2.1-1 are valid for all FDD tests unless otherwise stated.

@@ -1,0 +1,1 @@
+Using this configuration the fraction of maximum throughput percentage shall meet or exceed the minimum requirements specified in Table 8.2.1.3.1.3-1 for the specified SNR. For open-loop spatial multiplexing performance with large delay CDD is specified.

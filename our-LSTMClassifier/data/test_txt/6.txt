@@ -1,0 +1,1 @@
+The supported testable largest aggregated CA bandwidth combinations for 5CCs for each CA capability are listed in Table 8.1.2.2-8.

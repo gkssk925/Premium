@@ -1,0 +1,1 @@
+The definition with respect to CA capabilities for 2CCs is given as in Table 8.1.2.2-1. The definition with respect to CA capabilities for 3CCs is given in Table 8.1.2.2-3.

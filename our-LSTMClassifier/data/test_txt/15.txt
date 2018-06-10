@@ -1,0 +1,1 @@
+For 4Rx capable UEs, if corresponding tests listed from the 4Rx test lists from Table 8.1.2.6.1-1 are tested, the test coverage can be considered fulfilled without executing the corresponding tests listed from the 2Rx test lists from Table 8.1.2.6.1-1.

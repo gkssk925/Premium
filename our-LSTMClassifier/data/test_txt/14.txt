@@ -1,0 +1,1 @@
+For 4Rx capable UEs without any 2Rx supported RF bands, for all single carrier tests listed in Table 8.1.2.6.1-0 specified from 8.2 to 8.8 with 2Rx can be skipped.

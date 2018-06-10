@@ -1,0 +1,1 @@
+Message contents are according to TS 36.508 [7] clause 4.6.

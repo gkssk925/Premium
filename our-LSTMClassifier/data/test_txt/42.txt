@@ -1,0 +1,1 @@
+Using this configuration the fraction of maximum throughput percentage shall meet or exceed the minimum requirements specified in Table 8.2.1.2.2.3-2 for the specified SNR. For transmit diversity (SFBC) performance with 4 transmitter antennas as specified.

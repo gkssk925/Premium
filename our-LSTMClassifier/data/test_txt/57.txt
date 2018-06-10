@@ -1,0 +1,1 @@
+The fraction of maximum throughput percentage for the downlink reference measurement channels specified in Annex A clause A.3.3.2 for throughput test shall meet or exceed the specified value in Table 8.2.1.2.5.5-2 for the specified SNR including test tolerances.

@@ -1,0 +1,1 @@
+The supported testable aggregated CA bandwidth combinations for 2CCs for each CA capability are listed in Table 8.1.2.2-2.

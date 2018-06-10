@@ -1,0 +1,1 @@
+The supported testable dual connectivity bandwidth combinations for 2CCs for each dual connectivity capability are listed in Table 8.1.2.2A-2.

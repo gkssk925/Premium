@@ -1,0 +1,2 @@
+For CA with 5DL CCs, the requirements are specified in Table 8.2.1.1.1_A.5.5-2, based on single carrier requirement specified in Table 8.2.1.1.1_A.5.5-1.
+The fraction of maximum throughput percentage for the downlink reference measurement channels specified in Annex A clause A.3.3.1 for the throughput test shall meet or exceed the specified value in Table 8.2.1.1.1_A.5.5-1 for the specified SNR including test tolerances for all throughput tests.
