@@ -1,5 +1,5 @@
 ---
-All works were commited by Hyojin Kim./
+All works were commited by Hyojin Kim.
 
 Text Classification baed on LSTM on tesing environmnet document.
 ---
