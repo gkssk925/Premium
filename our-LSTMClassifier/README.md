@@ -1,5 +1,6 @@
 ---
-Text Classification baed on LSTM on R8 Dataset-[pytorch implementation]
+All works were commited by Hyojin Kim.
+Text Classification baed on LSTM on tesing environmnet document.
 ---
 
 ### 1. Details of file fold:
