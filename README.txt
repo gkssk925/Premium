@@ -2,47 +2,54 @@
 Capstone Design
 
 
-< ê°•ì§€ì—° ì‘ì„±ì½”ë“œ >
-1. boardDAO.java // ê²Œì‹œíŒ í…Œì´ë¸”(DB)ì„ ì›¹ê³¼ ì—°ê²° ì½”ë“œ
-2. boardDTO.java // ê²Œì‹œíŒ í…Œì´ë¸” í´ë˜ìŠ¤
-3. exdataDAO.java // ì¶”ì¶œ ë°ì´í„° í…Œì´ë¸”(DB)ë¥¼ ì›¹ê³¼ ì—°ê²° 
-4. exdataDTO.java // ì¶”ì¶œ ë°ì´í„° í…Œì´ë¸” í´ë˜ìŠ¤
-5. qnaDAO.java // ì§ˆë¬¸ê²Œì‹œíŒ í…Œì´ë¸” (DB)ë¥¼ ì›¹ê³¼ ì—°ê²° 
-6. qnaDTO.java // ì§ˆë¬¸ê²Œì‹œíŒ í…Œì´ë¸” í´ë˜ìŠ¤
-7. userDAO.java // íšŒì› ê´€ë¦¬ í…Œì´ë¸” (DB)ì„ ì›¹ê³¼ ì—°ê²° ì½”ë“œ
-8. userDTO.java // íšŒì› ê´€ë¦¬ í…Œì´ë¸” í´ë˜ìŠ¤
-9. boardDelete.jsp // ê²Œì‹œíŒ ì§€ìš°ê¸°
-10. boardReply.jsp // ì§ˆë¬¸ê²Œì‹œíŒ ë‹µê¸€
-11. boardShow.jsp // ì§ˆë¬¸ê²Œì‹œíŒ ê²Œì‹œê¸€ ë‚´ìš© ì„œì‹ ì½”ë“œ
-12. boardUpdate.jsp // ì§ˆë¬¸ê²Œì‹œíŒ ê²Œì‹œê¸€ ìˆ˜ì •
-13. boardwrite.jsp // ì§ˆë¬¸ê²Œì‹œíŒ ê²Œì‹œê¸€ ì“°ê¸°
-14. dataSearch.jsp // ìƒì„¸ê²€ìƒ‰ ë©”ë‰´ êµ¬í˜„ ì½”ë“œ
-15. deleteAction.jsp // ê²Œì‹œê¸€ ì‚­ì œ ì½”ë“œ
-16. docInfo.jsp // ì¶”ì¶œ ë¬¸ì„œ ì •ë³´ ì„œì‹ ì½”ë“œ
-17. emailCheckAction.jsp // ì´ë©”ì¼ ì¸ì¦ ì½”ë“œ
-18. emailSendAction.jsp // ì´ë©”ì¼ ì¸ì¦ ì „ì†¡ ì½”ë“œ
-19. emailSendConfirm.jsp // ì´ë©”ì¼ ì¸ì¦ í™•ì¸ ì½”ë“œ
-20. index.jsp // ììœ ê²Œì‹œíŒ ì„œì‹ ì½”ë“œ
-21. qna.jsp // ì§ˆë¬¸ê²Œì‹œíŒ ì„œì‹ ì½”ë“œ
-22. qnaReply.jsp // ì§ˆë¬¸ê²Œì‹œíŒ ë‹µë³€ ë“±ë¡ ê²Œì‹œê¸€ ì„œì‹
-23. qnaUpdate.jsp // ì§ˆë¬¸ ê²Œì‹œíŒ ê²Œì‹œê¸€ ìˆ˜ì • ì„œì‹
-24. qnaWrite.jsp // ì§ˆë¬¸ ê²Œì‹œíŒ ê²Œì‹œê¸€ ë“±ë¡ ì„œì‹
-25. RegisterAction.jsp // ììœ ê²Œì‹œíŒ ê²Œì‹œê¸€ ë“±ë¡ 
-26. update.jsp // íšŒì› ì •ë³´ ìˆ˜ì • ì„œì‹
-27. userJoin.jsp // íšŒì› ê°€ì…
-28. userLogin.jsp // ë¡œê·¸ì¸ ì„œì‹
-29. userLoginAction.jsp // ë¡œê·¸ì¸ ì•¡ì…˜
-30. SHA256.java // ì´ë©”ì¼ í•´ì‰¬ í•¨ìˆ˜ í™•ì¸
-31. userLogout.jsp // ë¡œê·¸ì•„ì›ƒ ì•¡ì…˜
-32. userRegisterAction.jsp // ììœ ê²Œì‹œíŒ ê²Œì‹œê¸€ ë“±ë¡ ì•¡ì…˜
-33. userUpdate.jsp // íšŒì› ì •ë³´ ìˆ˜ì • ì•¡ì…˜
-	* ì›¹í˜ì´ì§€ ë””ìì¸ì€ í•œë²ˆ ì‘ì„±í•˜ì—¬ ëª¨ë“  ì½”ë“œì— ë˜‘ê°™ì´ ë„£ì—ˆìŠµë‹ˆë‹¤.
-34. testacc_graph_code.txt // ë¨¸ì‹ ëŸ¬ë‹ í…ŒìŠ¤íŠ¸ ì •í™•ë„ ê·¸ë˜í”„ ì½”ë“œ
-35. trainingacc_graph_code.txt // ë¨¸ì‹ ëŸ¬ë‹ íŠ¸ë ˆì´ë‹ ì •í™•ë„ ê·¸ë˜í”„ ì½”ë“œ
+< °­Áö¿¬ ÀÛ¼ºÄÚµå >
+1. boardDAO.java // °Ô½ÃÆÇ Å×ÀÌºí(DB)À» À¥°ú ¿¬°á ÄÚµå
+2. boardDTO.java // °Ô½ÃÆÇ Å×ÀÌºí Å¬·¡½º
+3. exdataDAO.java // ÃßÃâ µ¥ÀÌÅÍ Å×ÀÌºí(DB)¸¦ À¥°ú ¿¬°á 
+4. exdataDTO.java // ÃßÃâ µ¥ÀÌÅÍ Å×ÀÌºí Å¬·¡½º
+5. qnaDAO.java // Áú¹®°Ô½ÃÆÇ Å×ÀÌºí (DB)¸¦ À¥°ú ¿¬°á 
+6. qnaDTO.java // Áú¹®°Ô½ÃÆÇ Å×ÀÌºí Å¬·¡½º
+7. userDAO.java // È¸¿ø °ü¸® Å×ÀÌºí (DB)À» À¥°ú ¿¬°á ÄÚµå
+8. userDTO.java // È¸¿ø °ü¸® Å×ÀÌºí Å¬·¡½º
+9. boardDelete.jsp // °Ô½ÃÆÇ Áö¿ì±â
+10. boardReply.jsp // Áú¹®°Ô½ÃÆÇ ´ä±Û
+11. boardShow.jsp // Áú¹®°Ô½ÃÆÇ °Ô½Ã±Û ³»¿ë ¼­½Ä ÄÚµå
+12. boardUpdate.jsp // Áú¹®°Ô½ÃÆÇ °Ô½Ã±Û ¼öÁ¤
+13. boardwrite.jsp // Áú¹®°Ô½ÃÆÇ °Ô½Ã±Û ¾²±â
+14. dataSearch.jsp // »ó¼¼°Ë»ö ¸Ş´º ±¸Çö ÄÚµå
+15. deleteAction.jsp // °Ô½Ã±Û »èÁ¦ ÄÚµå
+16. docInfo.jsp // ÃßÃâ ¹®¼­ Á¤º¸ ¼­½Ä ÄÚµå
+17. emailCheckAction.jsp // ÀÌ¸ŞÀÏ ÀÎÁõ ÄÚµå
+18. emailSendAction.jsp // ÀÌ¸ŞÀÏ ÀÎÁõ Àü¼Û ÄÚµå
+19. emailSendConfirm.jsp // ÀÌ¸ŞÀÏ ÀÎÁõ È®ÀÎ ÄÚµå
+20. index.jsp // ÀÚÀ¯°Ô½ÃÆÇ ¼­½Ä ÄÚµå
+21. qna.jsp // Áú¹®°Ô½ÃÆÇ ¼­½Ä ÄÚµå
+22. qnaReply.jsp // Áú¹®°Ô½ÃÆÇ ´äº¯ µî·Ï °Ô½Ã±Û ¼­½Ä
+23. qnaUpdate.jsp // Áú¹® °Ô½ÃÆÇ °Ô½Ã±Û ¼öÁ¤ ¼­½Ä
+24. qnaWrite.jsp // Áú¹® °Ô½ÃÆÇ °Ô½Ã±Û µî·Ï ¼­½Ä
+25. RegisterAction.jsp // ÀÚÀ¯°Ô½ÃÆÇ °Ô½Ã±Û µî·Ï 
+26. update.jsp // È¸¿ø Á¤º¸ ¼öÁ¤ ¼­½Ä
+27. userJoin.jsp // È¸¿ø °¡ÀÔ
+28. userLogin.jsp // ·Î±×ÀÎ ¼­½Ä
+29. userLoginAction.jsp // ·Î±×ÀÎ ¾×¼Ç
+30. SHA256.java // ÀÌ¸ŞÀÏ ÇØ½¬ ÇÔ¼ö È®ÀÎ
+31. userLogout.jsp // ·Î±×¾Æ¿ô ¾×¼Ç
+32. userRegisterAction.jsp // ÀÚÀ¯°Ô½ÃÆÇ °Ô½Ã±Û µî·Ï ¾×¼Ç
+33. userUpdate.jsp // È¸¿ø Á¤º¸ ¼öÁ¤ ¾×¼Ç
+	* À¥ÆäÀÌÁö µğÀÚÀÎÀº ÇÑ¹ø ÀÛ¼ºÇÏ¿© ¸ğµç ÄÚµå¿¡ ¶È°°ÀÌ ³Ö¾ú½À´Ï´Ù.
+34. testacc_graph_code.txt // ¸Ó½Å·¯´× Å×½ºÆ® Á¤È®µµ ±×·¡ÇÁ ÄÚµå
+35. trainingacc_graph_code.txt // ¸Ó½Å·¯´× Æ®·¹ÀÌ´× Á¤È®µµ ±×·¡ÇÁ ÄÚµå
 
 
 
-<  ì‘ì„±ì½”ë“œ >
+<±èÈ¿Áø  ÀÛ¼ºÄÚµå >
 I worked on whole our_LSTMClassifier code and data cleaning for machine learning.
 
-I also did some works on Capsone_table name ì¶”ì¶œê¹Œì§€/doc_extract.py. 
+I also did some works on Capsone_table name ÃßÃâ±îÁö/doc_extract.py. 
+
+
+<ÇÑ½Â¿¬ ÀÛ¼ºÄÚµå >
+Capstone_table name ÃßÃâ±îÁö/doc_extract.py // µ¥ÀÌÅÍ ÃßÃâ ÄÚµå
+Capstone_table name ÃßÃâ±îÁö/CreateDatabase.py // MySQL µ¥ÀÌÅÍ º£ÀÌ½º »ı¼º ÄÚµå
+Capstone_table name ÃßÃâ±îÁö/CreateTable.py // MySQL µ¥ÀÌÅÍ º£ÀÌ½º¿¡ Å×ÀÌºí »ı¼º ÄÚµå
+emailSendAction.jsp // ÀÌ¸ŞÀÏ ÀÎÁõ Àü¼Û ÄÚµå
